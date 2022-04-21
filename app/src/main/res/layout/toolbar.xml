@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:background="#FFC700"
+    android:elevation="4dp">
+
+    <TextView
+        android:text="Nani Teri Morni"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:fontFamily="@font/itckrist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</androidx.appcompat.widget.Toolbar>

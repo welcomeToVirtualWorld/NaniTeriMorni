@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#07B2CE"
+            android:weightSum="5"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1.8"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="3.2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <ImageView
+                    android:src="@drawable/subtraction1"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:weightSum="7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_weight="2.5"
+                android:layout_marginTop="60dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rhym_1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:text="Recommended"
+                    android:layout_marginStart="8dp"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/recommend_rhymes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_weight="0.5"
+                android:background="#07B2CE"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:weightSum="2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/nav_Rhymes"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:padding="5dp"
+                        android:src="@drawable/rhymes"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:id="@+id/nav_Stories"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:padding="5dp"
+                        android:src="@drawable/stories"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>
